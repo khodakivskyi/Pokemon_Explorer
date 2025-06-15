@@ -37,6 +37,10 @@ nav a:hover {
 }
 
 .pokemon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: white;
     border-radius: 8px;
     padding: 1rem;

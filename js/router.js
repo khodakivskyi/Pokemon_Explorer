@@ -1,4 +1,5 @@
 import { loadGallery } from './pages/GalleryPage.js';
+import { loadFavorites } from './pages/FavoritesPage.js';
 
 export function router() {
     const hash = window.location.hash || "#gallery";
@@ -7,6 +8,6 @@ export function router() {
     if (hash === "#gallery") {
         loadGallery(app);
     } else if (hash === "#favorites") {
-
+        loadFavorites(app);
     }
 }
