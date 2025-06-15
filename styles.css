@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #e3e3e3;
 }
 
 header {
@@ -12,6 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -64,3 +65,31 @@ button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
+.gallery-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#search-input, #type-filter, #prev-btn, #next-btn, #clear-filters-btn{
+    height: 27px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+#search-input:focus, #type-filter:focus {
+    border: 1px solid #622423;
+}
+#prev-btn:hover, #next-btn:hover, #clear-filters-btn:hover{
+    background-color: black;
+    color: white;
+}
+#search-input{
+    width: 180px;
+    padding: 1px;
+    height: 25px;
+}
+#clear-filters-btn{
+    background-color: white;
+}
+

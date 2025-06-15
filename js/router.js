@@ -1,5 +1,5 @@
-import { loadGallery } from './pages/GalleryPage.js';
-import { loadFavorites } from './pages/FavoritesPage.js';
+import { loadGallery } from './pages/galleryPage.js';
+import { loadFavorites } from './pages/favoritesPage.js';
 
 export function router() {
     const hash = window.location.hash || "#gallery";

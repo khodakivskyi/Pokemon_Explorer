@@ -1,5 +1,5 @@
 import { loadFavoritesFromStorage, saveFavorites } from '../utils/storage.js';
-import { createPokemonCard } from '../components/PokemonCard.js';
+import { createPokemonCard } from '../components/pokemonCard.js';
 
 export function loadFavorites(container) {
     const favorites = loadFavoritesFromStorage();
