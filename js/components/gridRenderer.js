@@ -21,6 +21,12 @@ export function renderPokemonGrid(pokemons, gridElement) {
             renderPokemonGrid(pokemons, gridElement);
         });
 
+        card.addEventListener('click', (e) => {
+            if (e.target.closest('.fav-btn')) return;
+
+            window.location.hash = `#pokemon-info?name=${pokemon.name}`;
+        })
+
         gridElement.appendChild(card);
     });
 }
