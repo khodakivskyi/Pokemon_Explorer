@@ -116,3 +116,15 @@ button:disabled {
     margin: 40px auto 0 auto;
 }
 
+@media (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .gallery-header {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
