@@ -1,5 +1,11 @@
 const BASE_URL = 'https://pokeapi.co/api/v2';
 
+export async function fetchAllPokemons(limit = 10000, offset = 0) {
+    const res = await fetch(`${BASE_URL}/pokemon?limit=${limit}&offset=${offset}`);
+    if (!res.ok) throw new Error("Failed to fetch all pokemons");
+    return res.json();
+}
+
 export async function fetchPokemons(limit = 20, offset = 0) {
     const res = await fetch(`${BASE_URL}/pokemon?limit=${limit}&offset=${offset}`);
     if (!res.ok) throw new Error("Failed to fetch pokemons");
