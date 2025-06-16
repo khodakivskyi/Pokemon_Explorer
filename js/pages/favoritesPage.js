@@ -25,6 +25,12 @@ export function loadFavorites(container) {
         });
 
         grid.appendChild(card);
+
+        card.addEventListener('click', (e) => {
+            if (e.target.closest('.fav-btn')) return;
+
+            window.location.hash = `#pokemon-info?name=${pokemon.name}`;
+        })
     });
 
     container.appendChild(grid);
